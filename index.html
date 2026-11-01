@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>POWER BY INI NAKY</title>
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;background:#100e16;color:white;
+ font-family:Arial,sans-serif;padding-bottom:75px
+}
+header{
+ background:#191522;padding:22px 16px;
+ border-bottom:1px solid #b99545;
+}
+.logo{color:#e5bd65;font-size:23px;font-weight:bold}
+.sub{color:#aaa;font-size:11px;letter-spacing:3px}
+h2{font-size:19px;color:#e5bd65}
+main{padding:16px}
+.banner{
+ background:linear-gradient(135deg,#302044,#15121d);
+ border:1px solid #98723b;border-radius:16px;
+ padding:25px 18px;margin-bottom:22px
+}
+.banner h1{color:#e8c36d;font-size:24px}
+.banner p{color:#ddd;font-size:13px}
+.card{
+ background:#201c29;border:1px solid #393044;
+ border-radius:13px;padding:15px;margin:10px 0
+}
+.room{display:flex;justify-content:space-between;align-items:center}
+button{
+ background:#b48b43;color:#17121b;border:0;
+ padding:10px 16px;border-radius:8px;font-weight:bold
+}
+nav{
+ position:fixed;bottom:0;left:0;right:0;
+ display:flex;justify-content:space-around;
+ background:#191522;padding:14px 4px;
+ border-top:1px solid #51402b
+}
+nav a{color:#d9bd83;text-decoration:none;font-size:12px}
+.small{font-size:12px;color:#aaa}
+</style>
+</head>
+<body>
+<header>
+ <div class="logo">♛ POWER BY INI NAKY</div>
+ <div class="sub">VOICE • COMMUNITY • FRIENDSHIP</div>
+</header>
+
+<main>
+ <section class="banner">
+  <h1>Selamat Datang!</h1>
+  <p>Temukan teman baru dan bergabung dengan komunitas suara.</p>
+  <button onclick="show('Selamat datang di POWER BY INI NAKY')">
+   Mulai Jelajah
+  </button>
+ </section>
+
+ <h2>♛ Komunitas Pilihan</h2>
+ <div class="card">
+  <h3>ROYAL FAMILY</h3>
+  <p class="small">Komunitas persahabatan</p>
+ </div>
+
+ <h2>🎙 Voice Room</h2>
+ <div class="card room">
+  <div>
+   <b>Ruang Santai</b>
+   <p class="small">Ruang obrolan komunitas</p>
+  </div>
+  <button onclick="show('Fitur Voice Room akan diaktifkan pada tahap berikutnya')">Masuk</button>
+ </div>
+
+ <div class="card room">
+  <div>
+   <b>Tempat Nongkrong</b>
+   <p class="small">Ruang pertemanan</p>
+  </div>
+  <button onclick="show('Fitur Voice Room akan diaktifkan pada tahap berikutnya')">Masuk</button>
+ </div>
+
+ <h2>👤 Profil Saya</h2>
+ <div class="card">
+  <b>INI NAKY</b>
+  <p class="small">Anggota komunitas</p>
+ </div>
+</main>
+
+<nav>
+ <a href="#">⌂<br>Beranda</a>
+ <a href="#rooms">🎙<br>Voice</a>
+ <a href="#family">♛<br>Keluarga</a>
+ <a href="#profile">👤<br>Profil</a>
+</nav>
+
+<script>
+function show(message){
+ alert(message);
+}
+</script>
+</body>
+</html>
